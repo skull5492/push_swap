@@ -59,9 +59,9 @@ void	ft_parameters(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers);
 void	free_stacks(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers);
-void	ft_maxbit(int maximum_number, int maximum_bits);
 void	extra_stack_b(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers);
+void	test_values(int *loop_through);
 
 //void	printList(long *stack_a, int size);
 #endif

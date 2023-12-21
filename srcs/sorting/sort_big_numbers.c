@@ -81,9 +81,9 @@ long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 
 	maximum_number = stack_a_numbers[1] - 1;
 	maximum_bits = 0;
-	loop_through[0] = 0;
-	loop_through[1] = 0;
-	ft_maxbit(maximum_number, maximum_bits);
+	test_values(loop_through);
+	while ((maximum_number >> maximum_bits) != 0)
+		++maximum_bits;
 	while (loop_through[0] < maximum_bits)
 	{
 		loop_through[1] = 0;
