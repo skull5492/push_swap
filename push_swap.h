@@ -19,8 +19,10 @@
 # include <stdio.h>
 # include <errno.h>
 
-void	stack_a_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
-void	stack_b_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers);
+void	stack_a_push(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers);
+void	stack_b_push(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers);
 
 void	reverse_rotate_stack_a(long *stack_a, int *stack_a_numbers);
 void	reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers);

@@ -1,16 +1,16 @@
 NAME = push_swap
 
-CC = gcc
+CC = cc
 
 FLAGS = -Wall -Werror -Wextra
 
-SRC = srcs/operations/*.c \
+SRC = srcs/operations/*.c\
 		   srcs/sorting/*.c \
 		   srcs/utils/*.c \
 		   srcs/main.c
 
 $(NAME):
-		$(CC) $(FLAGS) $(SRC) -Iincludes -o $(NAME)
+		$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 all: $(NAME)
 
