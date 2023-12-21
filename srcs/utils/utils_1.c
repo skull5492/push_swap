@@ -12,7 +12,8 @@
 
 #include "../../push_swap.h"
 
-void	free_stacks(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	free_stacks(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	free(stack_a);
 	free(stack_b);
@@ -66,7 +67,8 @@ int	dupe_numbers(long *stack_a, int stack_a_numbers)
 	return (0);
 }
 
-void	ft_parameters(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	ft_parameters(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	stack_a_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 	rotate_stack_a(stack_a, stack_a_numbers);

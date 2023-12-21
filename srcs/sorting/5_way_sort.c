@@ -18,7 +18,8 @@ void	stack_a_rotation(long *stack_a, int *stack_a_numbers)
 	rotate_stack_a(stack_a, stack_a_numbers);
 }
 
-void	first_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	first_stack(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	if (stack_b[0] < stack_a[0])
 		stack_a_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
@@ -42,7 +43,8 @@ void	first_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_
 	}
 }
 
-void	second_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	second_stack(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	if (stack_b[0] < stack_a[0])
 	{
@@ -70,7 +72,8 @@ void	second_stack(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack
 		ft_parameters(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 }
 
-void	sort_5_numbers(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	sort_5_numbers(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	stack_b_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 	stack_b_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);

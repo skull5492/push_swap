@@ -37,7 +37,8 @@ void	stack_section_sort(long *array, int *stack_size)
 	}
 }
 
-void	first_stack_a_swap(long *copy, long *copy_swap_stack_a, long *stack_a, int *stack_a_numbers)
+void	first_stack_a_swap(long *copy, \
+long *copy_swap_stack_a, long *stack_a, int *stack_a_numbers)
 {
 	int	i;
 
@@ -50,7 +51,8 @@ void	first_stack_a_swap(long *copy, long *copy_swap_stack_a, long *stack_a, int 
 	}
 }
 
-void	second_stack_a_swap(long *copy, long *copy_swap_stack_a, long *stack_a, int *stack_a_numbers)
+void	second_stack_a_swap(long *copy, \
+long *copy_swap_stack_a, long *stack_a, int *stack_a_numbers)
 {
 	int	i;
 	int	j;
@@ -70,7 +72,8 @@ void	second_stack_a_swap(long *copy, long *copy_swap_stack_a, long *stack_a, int
 	}
 }
 
-void	third_stack_a_swap(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	third_stack_a_swap(long *stack_a, \
+long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
 	int	maximum_number;
 	int	maximum_bits;
@@ -90,7 +93,8 @@ void	third_stack_a_swap(long *stack_a, long *stack_b, int *stack_a_numbers, int 
 			if (((stack_a[0] >> loop_through[0]) & 1) == 1)
 				rotate_stack_a(stack_a, stack_a_numbers);
 			else
-				stack_b_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
+				stack_b_push(stack_a, stack_b, \
+				stack_a_numbers, stack_b_numbers);
 			++loop_through[1];
 		}
 		while (*stack_b_numbers != 0)
@@ -99,7 +103,8 @@ void	third_stack_a_swap(long *stack_a, long *stack_b, int *stack_a_numbers, int 
 	}
 }
 
-void	sort_beyond_3_and_5_numbers(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	sort_beyond_3_and_5_numbers(long *stack_a, \
+long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
 	long	*copy;
 	long	*copy_swap_stack_a;

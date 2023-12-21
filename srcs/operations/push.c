@@ -37,7 +37,8 @@ int *stack_a_numbers, int *stack_b_numbers)
 	write(1, "pa\n", 3); 
 }
 
-void	stack_b_push(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	stack_b_push(long *stack_a, long *stack_b, \
+int *stack_a_numbers, int *stack_b_numbers)
 {
 	int	a;
 

@@ -48,7 +48,8 @@ void	rotate_stack_b(long *stack_b, int *stack_b_numbers)
 	write(1, "rb\n", 3);
 }
 
-void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
+void	rotate_stack_a_and_stack_b(long *stack_a, \
+long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 {
 	int		i;
 	long	*temp;

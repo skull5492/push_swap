@@ -49,7 +49,8 @@ void	free_string(char **bruh)
 	}
 }
 
-int	numbers_input(long *stack_a, int *stack_a_numbers, char **argv, char**numbers_list)
+int	numbers_input(long *stack_a, int *stack_a_numbers, \
+char **argv, char**numbers_list)
 {
 	int	i;
 	int	numbers;
