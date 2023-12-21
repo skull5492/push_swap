@@ -83,8 +83,7 @@ long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 	maximum_bits = 0;
 	loop_through[0] = 0;
 	loop_through[1] = 0;
-	while ((maximum_number >> maximum_bits) != 0)
-		++maximum_bits;
+	ft_maxbit(maximum_number, maximum_bits);
 	while (loop_through[0] < maximum_bits)
 	{
 		loop_through[1] = 0;
@@ -97,8 +96,7 @@ long *stack_b, int *stack_a_numbers, int *stack_b_numbers)
 				stack_a_numbers, stack_b_numbers);
 			++loop_through[1];
 		}
-		while (*stack_b_numbers != 0)
-			stack_a_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
+		extra_stack_b(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 		++loop_through[0];
 	}
 }

@@ -73,13 +73,3 @@ int *stack_a_numbers, int *stack_b_numbers)
 	stack_a_push(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 	rotate_stack_a(stack_a, stack_a_numbers);
 }
-
-/*void	printList(long *stack_a, int size)
-{
-	printf("size: %d\n", size);
-	int i = -1;
-	while(++i < size)
-	{
-		printf("%ld\n", stack_a[i]);
-	}
-}*/
