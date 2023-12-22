@@ -20,7 +20,7 @@ void	rotate_stack_a(long *stack_a, int *stack_a_numbers)
 	i = 0;
 	temp = stack_a[0];
 	if (stack_a_numbers[1] <= 1)
-		stack_a = NULL;
+		return ;
 	while (i < stack_a_numbers[1] - 1) 
 	{
 		stack_a[i] = stack_a[i + 1];

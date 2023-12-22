@@ -81,7 +81,7 @@ int	main(int argc, char **argv)
 	|| (sort_stack_check(stack_a, stack_a_numbers) == 0))
 		free_stacks(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
 	if ((stack_a_numbers[1] == 2) && (stack_a[0] > stack_a[1]))
-		reverse_both_stacks(stack_a, stack_b, stack_a_numbers, stack_b_numbers);
+		swap_stack_a(stack_a, stack_a_numbers);
 	else if (stack_a_numbers[1] == 3)
 		sort_3_numbers(stack_a, stack_a_numbers);
 	else if (stack_a_numbers[1] == 5)

@@ -12,11 +12,11 @@
 
 #include "../../push_swap.h"
 
-void	stack_a_push(long *stack_a, long *stack_b, \
-int *stack_a_numbers, int *stack_b_numbers)
+void	stack_a_push(long *stack_a, long *stack_b,
+		int *stack_a_numbers, int *stack_b_numbers)
 {
-	int	a;
 	int	i;
+	int	a;
 
 	(stack_a_numbers[1])++;
 	a = stack_a_numbers[1] - 1;
@@ -36,11 +36,11 @@ int *stack_a_numbers, int *stack_b_numbers)
 	(*stack_b_numbers)--;
 	if (*stack_b_numbers == 0)
 		stack_b = NULL;
-	write(1, "pa\n", 3); 
+	write(1, "pa\n", 3);
 }
 
-void	stack_b_push(long *stack_a, long *stack_b, \
-int *stack_a_numbers, int *stack_b_numbers)
+void	stack_b_push(long *stack_a, long *stack_b,
+		int *stack_a_numbers, int *stack_b_numbers)
 {
 	int	a;
 	int	i;

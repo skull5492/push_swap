@@ -15,10 +15,10 @@ $(NAME):
 all: $(NAME)
 
 clean: 
-		@rm -rf sources/*.o
-		@rm -rf sources/operations/*.o
-		@rm -rf sources/sorting/*.o
-		@rm -rf sources/utils/*.o
+		@rm -rf srcs/*.o
+		@rm -rf srcs/operations/*.o
+		@rm -rf srcs/sorting/*.o
+		@rm -rf srcs/utils/*.o
 
 fclean : clean
 			@rm -rf $(NAME)
