@@ -16,20 +16,22 @@ void	stack_a_push(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers)
 {
 	int	a;
+	int	i;
 
 	(stack_a_numbers[1])++;
 	a = stack_a_numbers[1] - 1;
-	while (a > 0)
+	i = a;
+	while (i > 0)
 	{
-		stack_a[a] = stack_a[a - 1];
-		a--;
+		stack_a[i] = stack_a[i - 1];
+		i--;
 	}
 	stack_a[0] = stack_b[0];
-	a = 0;
-	while (a < *stack_b_numbers)
+	i = 0;
+	while (i < (*stack_b_numbers - 1))
 	{
-		stack_b[a] = stack_b[a + 1];
-		a++;
+		stack_b[i] = stack_b[i + 1];
+		i++;
 	}
 	(*stack_b_numbers)--;
 	if (*stack_b_numbers == 0)
@@ -41,23 +43,25 @@ void	stack_b_push(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers)
 {
 	int	a;
+	int	i;
 
 	(*stack_b_numbers)++;
 	a = *stack_b_numbers - 1;
-	while (a > 0)
+	i = a;
+	while (i > 0)
 	{
-		stack_b[a] = stack_b[a - 1];
-		a--;
+		stack_b[i] = stack_b[i - 1];
+		i--;
 	}
 	stack_b[0] = stack_a[0];
-	a = 0;
-	while (a < stack_a_numbers[1])
+	i = 0;
+	while (i < stack_a_numbers[1] - 1)
 	{
-		stack_a[a] = stack_a[a + 1];
-		a++;
+		stack_a[i] = stack_a[i + 1];
+		i++;
 	}
 	(stack_a_numbers[1])--;
 	if (stack_a_numbers[1] == 0)
 		stack_a = NULL;
-	write(1, "pb\n", 3); 
+	write(1, "pb\n", 3);
 }
