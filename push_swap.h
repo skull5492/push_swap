@@ -23,6 +23,8 @@ void	stack_a_push(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers);
 void	stack_b_push(long *stack_a, long *stack_b, \
 int *stack_a_numbers, int *stack_b_numbers);
+void	space_save(long *stack_b, int i);
+void	space_save_2(long *stack_a, int *stack_a_numbers, int i, long *temp);
 
 void	reverse_rotate_stack_a(long *stack_a, int *stack_a_numbers);
 void	reverse_rotate_stack_b(long *stack_b, int *stack_b_numbers);

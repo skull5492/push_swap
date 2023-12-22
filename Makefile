@@ -2,7 +2,7 @@ NAME = push_swap
 
 CC = cc
 
-FLAGS = -Wall -Werror -Wextra #-fsanitize=address
+FLAGS = -Wall -Werror -Wextra -fsanitize=address
 
 SRC = srcs/operations/*.c\
 		   srcs/sorting/*.c \
