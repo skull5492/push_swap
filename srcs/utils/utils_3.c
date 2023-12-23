@@ -12,11 +12,11 @@
 
 #include "../../push_swap.h"
 
-int	ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	sign = 1;
@@ -100,19 +100,13 @@ int	seperating_input_numbers(long *stack_a, int *stack_a_numbers, char **argv)
 	char	**numbers_list;
 
 	numbers_list = NULL;
-	if (stack_a_numbers[0] == 1)
-	{
-		if (numbers_input(stack_a, stack_a_numbers, argv, numbers_list) == -1)
-			return (-1);
-	}
-	else
-	{
-		if (standard_input(stack_a, stack_a_numbers, argv) == -1)
-			return (-1);
-	}
+	if (stack_a_numbers[0] == 1 && numbers_input(stack_a, stack_a_numbers, argv, numbers_list) == -1)
+		return (-1);
+	else if (standard_input(stack_a, stack_a_numbers, argv) == -1)
+		return (-1);
 	if (dupe_numbers(stack_a, stack_a_numbers[1]) == -1)
 		return (-1);
-	if (number_limits(stack_a, stack_a_numbers[1] == -1))
+	if (number_limits(stack_a, stack_a_numbers[1]) == -1)
 		return (-1);
 	return (0);
 }

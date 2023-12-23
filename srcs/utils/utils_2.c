@@ -38,14 +38,10 @@ int	stack_number_check(char *numbers)
 	minus = 0;
 	while (numbers[i])
 	{
-		if (numbers[i] == 45)
-			minus++;
-		else if (ft_isdigit(numbers[i]) == 0)
+		if (numbers[i] == 45 && ft_isdigit(numbers[i + 1]) == 0)
 			return (0);
 		i++;
 	}
-	if (minus > 1)
-		return (0);
 	return (1);
 }
 

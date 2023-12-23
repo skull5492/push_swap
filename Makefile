@@ -9,7 +9,7 @@ SRC = srcs/operations/*.c\
 		   srcs/utils/*.c \
 		   srcs/main.c
 
-$(NAME):
+$(NAME): $(SRC)
 		$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
 all: $(NAME)
